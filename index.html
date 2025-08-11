@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade HTML</title>
+    <link rel="icon" type="image/x-icon" href="ponto verde.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20rem;
+            margin-top: 0px;
+            margin-bottom: 20px;
+            max-width: 900px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        
+        header, main, footer {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            margin-top: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            text-align: center;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        h1, h2, h3 {
+            color: #0056b3;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background: #0056b3;
+            color: white;
+        }
+        code {
+            background: #eee;
+            padding: 2px 5px;
+            border-radius: 4px;
+        }
+        ul {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Funções da W3C e Semântica HTML</h1>
+    <p>Este documento apresenta as funções da W3C, a importância da Web Semântica e conceitos essenciais sobre HTML, tags, atributos e valores.</p>
+</header>
+
+<main>
+    <section>
+        <h2>Funções da entidade W3C</h2>
+        <p>Quando Tim Berners-Lee criou a web e o HTML, decidiu que era necessário um órgão para regulamentar, criar e manter os padrões para a web. Assim surgiu o <strong>W3C</strong> (<em>World Wide Web Consortium</em>), uma organização sem fins lucrativos.</p>
+        <p>O W3C é apoiado por empresas como Microsoft, Samsung, Apple, Google, Mozilla, entre outras. Essas empresas contribuem financeiramente e com profissionais em grupos de trabalho para aprimorar os padrões da web, garantindo compatibilidade entre dispositivos e navegadores.</p>
+        <p>Vale ressaltar que o W3C não cria todas as linguagens. Qualquer pessoa ou grupo pode desenvolver uma linguagem e submetê-la para se tornar padrão. Exemplos incluem:</p>
+        <ul>
+            <li>JavaScript (desenvolvido pela Ecma)</li>
+            <li>HTML5 (iniciado pelo grupo WhatWG)</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Semântica do HTML</h2>
+        <p>Na semântica do HTML, utilizamos tags que indicam o <strong>significado</strong> do conteúdo, e não apenas sua aparência. Isso organiza melhor a página e traz benefícios como:</p>
+        <ul>
+            <li>Melhorar a acessibilidade</li>
+            <li>Ajudar no SEO (Search Engine Optimization)</li>
+            <li>Garantir consistência entre dispositivos</li>
+        </ul>
+        <p>Exemplos de tags semânticas:</p>
+        <ul>
+            <li><code>&lt;html&gt;</code> – raiz do documento</li>
+            <li><code>&lt;head&gt;</code> – informações meta</li>
+            <li><code>&lt;body&gt;</code> – corpo visível</li>
+            <li><code>&lt;header&gt;</code> – cabeçalho</li>
+            <li><code>&lt;main&gt;</code> – conteúdo principal</li>
+            <li><code>&lt;footer&gt;</code> – rodapé</li>
+            <li><code>&lt;section&gt;</code> – seção temática</li>
+            <li><code>&lt;article&gt;</code> – conteúdo independente</li>
+            <li><code>&lt;aside&gt;</code> – conteúdo complementar</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Principais tags HTML</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tag</th>
+                    <th>Função</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>&lt;p&gt;</code></td>
+                    <td>Escrever um parágrafo</td>
+                </tr>
+                <tr>
+                    <td><code>&lt;h1&gt;</code></td>
+                    <td>Escrever um título</td>
+                </tr>
+                <tr>
+                    <td><code>&lt;b&gt;</code></td>
+                    <td>Deixar o texto em negrito</td>
+                </tr>
+                <tr>
+                    <td><code>&lt;button&gt;</code></td>
+                    <td>Criar um botão</td>
+                </tr>
+                <tr>
+                    <td><code>&lt;a&gt;</code></td>
+                    <td>Adicionar um link</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Atributos e valores de tags</h2>
+        <p>Para criar uma tag no HTML, utilizamos a sintaxe:</p>
+        <ul>
+            <li>Tag de abertura: <code>&lt;tag&gt;</code></li>
+            <li>Tag de fechamento: <code>&lt;/tag&gt;</code></li>
+        </ul>
+        <p>Algumas tags possuem sintaxe específica, como:</p>
+        <p><strong>Exemplo – tag &lt;a&gt; para criar links:</strong></p>
+        <code>&lt;a href="https://exemplo.com"&gt;Texto do link&lt;/a&gt;</code>
+
+        <h3>Atributos comuns</h3>
+        <ul>
+            <li><strong>class</strong> – agrupa elementos para estilização com CSS ou manipulação com JavaScript</li>
+            <li><strong>id</strong> – identifica de forma única um elemento na página</li>
+        </ul>
+        <p>Ambos seguem a sintaxe:</p>
+        <code>&lt;tag atributo="valor"&gt;...&lt;/tag&gt;</code>
+    </section>
+    <section>
+        <h2>Usabilidade, navegabilidade, acessibilidade e ergonomia no desenvolvimento de software. </h2>
+        <p>Esses conceitos são fundamentais para criar aplicações web que sejam não apenas funcionais, mas também agradáveis e fáceis de usar.</p>
+        <ul>
+            <li>Usabilidade é sobre o quanto o sistema é fácil de aprender e usar, sem causar confusão ou erro.</li>
+            <li>Navegabilidade é sobre como o usuário consegue se mover e encontrar o que precisa dentro do programa ou site, de forma clara e rápida.</li>
+            <li>Acessibilidade garante que todo mundo, inclusive pessoas com deficiência, consiga usar o software sem problemas, com recursos que ajudam na leitura, no som e na navegação.</li>
+            <li>Ergonomia é sobre deixar a interação mais confortável, evitando cansaço ou esforço desnecessário. Quando essas coisas são pensadas juntas, o resultado é um software mais simples, inclusivo e agradável para todo mundo.</li>
+        </ul>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 – Págida produzida por Caio 
+        Eguia Ceschini e Eduardo Menzel Med 16.</p>
+</footer>
+
+</body>
+</html>
